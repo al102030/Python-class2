@@ -107,6 +107,8 @@ A Python Programing full Crash cours in Kadoos EDU
   -
   - - ![](Images/9.png)
 
+### <span style="color: #03ce14;">Primitive Types</span>
+
 - <span style="color: Red;">Variables</span>
 
   - Core concept of storing data by programming languages
@@ -151,7 +153,7 @@ A Python Programing full Crash cours in Kadoos EDU
 - <span style="color: Red;">Standard Arithmetic Operations</span>
 
   - `+`, `-`, `*`, `/`, `//`, `%` and `**`
-  - Augmented Operations `=+`
+  - Augmented Operations `+=`, `-=`, `*=`, `/=`
 
 - <span style="color: Red;">Built-in Functions for Numbers</span>
 
@@ -166,4 +168,63 @@ A Python Programing full Crash cours in Kadoos EDU
   - Built-in Conversion methods in python
   - `int()`, `float`, `bool`, and `str`
   - talk about `type()` method
-  - All falsy values in python: `""`, `0`, and `None`
+  - All falsy values in python: `""`, `0`, `False`, and `None`
+  - Check in interpreter
+
+### <span style="color: #03ce14;">Control Flow </span>
+
+- <span style="color: Red;">Comparison Operators</span>
+
+  - `>`, `<`, `<=` `>=`, `==`, `!=`
+  - An integer and a string value save differentially in memory `10 == "10"` is wrong
+  - every character has unique numeric representation ()unicode, so `"bag" == "BAG"` is wrong
+  - Use `ord()` function to show differences
+
+- <span style="color: Red;">Conditional statement</span>
+
+  - `if` statement (always terminate it with `:`)
+  - Explain about code block and indentation on a simple example `temperature`
+  - Simple example (`if statement : pass`)
+  - Talk about indentation and code block with example of three print under an if statement
+  - Explain codes out of if block
+  - With `elif` statement we can add more condition to our code
+  - If all our conditions are not True we use `else` statement to execute last condition (lots of `elif` and one `else`)
+  - nested if statements
+
+- <span style="color: Red;">Ternary Operator</span>
+
+  - Turn 5 line code to one
+  - `X = elem1 if rule1 else elem2`
+  - message = "OK" if time >= 10 else "Not OK"
+
+- <span style="color: Red;">Logical Operator</span>
+
+  - `and`, `or`, and `not`
+  - `and` operator return True if both conditions are True
+  - `or` operator return True if one of conditions is True
+  - `not` changes the value of a boolean variable
+  - Don't use `==` for check a boolean variable
+  - Separate conditions logical comparison to make accurate comparison
+  - Avoid short circuit in the process of working with logical operators
+  - Chain logical operators instead of using theme in word format
+  - Use `18 <= age < 40` instead of `age >= 18 and age < 40`
+
+- <span style="color: Red;">For Loops</span>
+
+  - When we need to repeat a task for number of times `For loop' can do it (Ex: print something for 10 times)
+  - Talk about counter(`number`) and `range` function (step) and add `... * "."`
+
+- <span style="color: Red;">For...else</span>
+
+  - `else` execute when a loop completely was executed
+
+- <span style="color: Red;">Nested Loops</span>
+
+  - Talk about Outer and inner Loops
+  - Explain how exactly python interpreter execute nested loops
+
+- <span style="color: Red;">Iterables</span>
+  - TalkUse type for range() function to explain
+  - Range is complex type
+  - Iterable of strings or lists
+  - You can create a `iterable` object and use it in `For` loop
