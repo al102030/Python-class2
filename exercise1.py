@@ -13,7 +13,10 @@ print("Start!")
 
 #Mehrad
 #================================
-#your code
+value = input("How Many Stars Do You Want?: ")
+star = int(value)
+for number in range(star):
+    print(number*"*")
 #================================
 
 #Pantea
