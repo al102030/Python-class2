@@ -23,5 +23,15 @@ print("Start!")
 
 #Hamed
 #================================
-#your code
+#for number in range(1):
+    print("","","","","","" , "*")
+    for number in range(1):
+        print("","","","","","*","*")
+        for number in range(1):
+             print("","","","","*","*","*")
+             for number in range(1):
+                 print("","","","*","*","*","*")
+                 for number in range(1):
+                     print("","","*","*","*","*","*")
+                
 #================================
