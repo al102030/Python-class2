@@ -7,7 +7,11 @@ print("Start!")
 
 #Mohammad
 #================================
-#your code
+zel = int(input("Please write the size of the sides of the triangle"))
+space = zel+1
+for zel in range(1, zel+1):
+    print((space-zel)*" ", zel*"* ")
+
 #================================
 
 
