@@ -2,7 +2,9 @@ print("Start!")
 
 #Rastin
 #================================
-#your code
+distance = int(input("please enter the number:"))
+for star in range(6):
+	print(" "*(distance-star)+"* "*(star))
 #================================
 
 #Mohammad
