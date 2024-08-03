@@ -62,7 +62,16 @@ print("Exercise 2")
 
 #Mehrad
 #================================
-#Your Code
+user = input("Enter Your Number: ")
+number = int(user)
+even = 2
+count = 0
+while even <= number:
+    if even % 2 == 0:
+        count += 1
+        print(even)
+    even += 2
+print(f'Number of Even Numbers: {count}')
 #================================
 
 #Pantea
