@@ -55,7 +55,17 @@ print("Exercise 2")
 
 # Mohammad
 # ================================
-# your Code
+number = int(input("plz enter the number:"))
+start = 0
+count = 0
+while start <= number:
+    # ya kolan bray adad zoj mitonim bnvisim start+=2
+    start += 1
+    if start % 2 == 0:
+        print(start)
+        count += 1
+print(f"the amount is:{count}")
+#ye moshkeli k dare vaghti adad fard vared mikonam yeki ezafe tar ham minevise
 # ================================
 
 
