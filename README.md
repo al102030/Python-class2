@@ -269,8 +269,36 @@ A Python Programing full Crash cours in Kadoos EDU
   - A: A function that perform a task (`say_hello()`, `print()`)
   - B: A function that calculate and return a value (`round()`)
   - We use `return` statement to return a value from a function
-  - Write `say_hello()` function with `return` ang get it in variable
+  - Write `say_hello()` function with `return` and get it in variable
   - Talk about print a function that doesn't return any value
+  - By default all functions return a `None` value (indicator of absence a value)
 
 - <span style="color: Red;">Keyword Arguments</span>
-  - T
+
+  - Talk about temporary argument that python create for us when we pass a function to another function
+  - Make your code more readable when you are calling your function by using keyword arguments
+  - By adding a default value to a parameter we can make it optional
+  - (`Important`) All optional parameters should come after the required parameters
+
+- <span style="color: Red;">xargs</span>
+
+  - To pass a list of parameters to function we can use `xargs`
+  - It returns a `Tuple`
+  - By adding an asterisk (`*`) at beginning of a parameter it can take a list of values
+  - Talk about tuples and lists by return xargs argument
+
+- <span style="color: Red;">xxargs</span>
+
+  - To pass a series of keyword arguments to a function we can use `xxargs` parameter
+  - By adding double asterisk (`**`) at beginning of a parameter it can take a list of key value peers
+  - It returns a `Dictionary`
+  - By using `bracket` notation we can get the values of a dictionary
+
+- <span style="color: Red;">Scope</span>
+  - It's Impossible to call a variable which defined inside a function, outside of it
+  - A local variable only works inside the scope
+  - Thc completely equal variable in two different function is completely separate
+  - When a function called, python interpreter allocate a memory to it's variables and release it at end function's execution
+  - On the other side we have global variables which can be used anywhere in code
+  - Global use memory for long time and you should not use them often
+  -
