@@ -75,7 +75,16 @@ print(f'Number of Even Numbers: {count}')
 
 # Pantea
 # ================================
-# your code
+x = int(input("Enter your number: "))
+n = 0
+while n <= x:
+    if n % 2 == 0:
+        print(n)
+    n += 1
+
+# (x // 2) + 1
+# print(x)
+
 # ================================
 
 # Hamed
