@@ -50,7 +50,13 @@ print("Exercise 2")
 
 # Rastin
 # ================================
-# Your Code
+number = int(input("enter the number:"))
+count = 2
+
+while count <= number:
+    print(count)
+    count += 2
+
 # ================================
 
 # Mohammad
