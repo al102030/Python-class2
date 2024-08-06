@@ -132,7 +132,19 @@ print("Exercise 3")
 
 # Mehrad
 # ================================
-# Your Code
+def check_reverse():
+    command = " "
+    while command.upper() != "QUIT":
+        command = input(">>> ")
+        if command == command[::-1]:
+            print("True")
+        elif command.upper() == "QUIT":
+            print("Have a Nice Day!")
+        else:
+            print("False")
+
+
+check_reverse()
 # ================================
 
 
