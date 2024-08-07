@@ -72,7 +72,7 @@ while start <= number:
         print(start)
         count += 1
 print(f"the amount is:{count}")
-#ye moshkeli k dare vaghti adad fard vared mikonam yeki ezafe tar ham minevise
+# ye moshkeli k dare vaghti adad fard vared mikonam yeki ezafe tar ham minevise
 # ================================
 
 
@@ -174,9 +174,6 @@ def is_palindrome(number):
     return str_number == str_number[::-1]
 
 
-
-
-
 user_input = input("enter the number: ")
 
 if is_palindrome(user_input):
@@ -193,4 +190,3 @@ else:
 # ================================
 # Your Code
 # ================================
-
