@@ -167,7 +167,25 @@ check_reverse()
 
 # Pantea
 # ================================
-# Your Code
+def is_palindrome(number):
+
+    str_number = str(number)
+
+    return str_number == str_number[::-1]
+
+
+
+
+
+user_input = input("enter the number: ")
+
+if is_palindrome(user_input):
+
+    print("true ")
+
+else:
+
+    print("false ")
 # ================================
 
 
