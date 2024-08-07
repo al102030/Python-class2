@@ -295,10 +295,35 @@ A Python Programing full Crash cours in Kadoos EDU
   - By using `bracket` notation we can get the values of a dictionary
 
 - <span style="color: Red;">Scope</span>
+
   - It's Impossible to call a variable which defined inside a function, outside of it
-  - A local variable only works inside the scope
+  - A local variable only works inside the scope also parameters
   - Thc completely equal variable in two different function is completely separate
   - When a function called, python interpreter allocate a memory to it's variables and release it at end function's execution
   - On the other side we have global variables which can be used anywhere in code
   - Global use memory for long time and you should not use them often
+  - A global variable's value never change even inside a function
+  - By using `global` keyword we can reference a local variable to a global one
+  - Using global variables is not recommended because it can has a side effect in other functions
+
+- <span style="color: Red;">Debugging</span>
+
+  - Start debugging process inside `Debug panel` (F5)
+  - Choose current file and `VSCode` create a `json` file for your project (`don't touch it`)
+  - By using `bullet points` (F9) you can define break point for debug process
+  - By pushing F10 key you can step forward in process
+  - By pushing F11 key you can step into a sub-process like a function
+  - To stop debugger with `shift+F5`
+  - Debugger stops wherever you placed a bullet point
+  - To step out of a function or loop you can press `shift+F11`
+
+- <span style="color: Red;">VSCode Tricks</span>
+  - In each line you can move to the end by pushing `end` key
+  - In each line you can move to the beginning by pushing `home` key
+  - By pressing `Ctrl+end` cursor move to the end of the file
+  - By pressing `Ctrl+home` cursor move to the beginning of the file
+  - By pressing `alt` plus `arrow keys` (top-down) you can move a line of code top or down
+  - To duplicate a line press `alt+shift+down` keys
+  - By pressing `Ctrl+/` you can change a line to comment
+  - By typing some characters of a variable you can place it by pushing enter
   -
