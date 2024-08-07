@@ -126,7 +126,13 @@ print("Exercise 3")
 
 # Mohammad
 # ================================
-# Your Code
+def xx(number):
+    num = str(number)
+    return num[::-1] == str(number)
+
+
+ex = xx(1221)
+print(ex)
 # ================================
 
 
