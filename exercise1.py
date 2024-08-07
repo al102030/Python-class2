@@ -120,7 +120,18 @@ print("Exercise 3")
 
 # Rastin
 # ================================
-# Your Code
+number = int(input("enter the number:"))
+reverse = 0
+while number > 0:
+    r1 = number % 10
+    reverse = reverse * 10 + num
+    r2 = number // 10
+# vase addad 2 raghami az r1*10+r2 ham estefade mishe
+print(reverse)
+if (number == reverse):
+    print(True)
+else:
+    print(False)
 # ================================
 
 
