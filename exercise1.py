@@ -210,7 +210,23 @@ print("Exercise 4")
 
 # Mehrad
 # ================================
-# Your Code
+def average(*points, name="Student"):
+
+    total = 0
+    for num in points:
+        total += num
+        avg = total // len(points)
+
+    name = input("Enter Your Name: ") or name
+    if 20 >= avg >= 18:
+        print(f"Dear {name} Your Grade is \"A\"")
+    elif 18 >= avg >= 14:
+        print(f"Dear {name} Your Grade is \"B\"")
+    else:
+        print(f"Dear {name} Your Grade is \"C\"")
+
+
+average(18, 17, 20, 16, 19)
 # ================================
 
 
