@@ -222,27 +222,26 @@ num()
 # Mohammad
 # ================================
 def report_card(*grades, name="student"):
+    total_grades = 0
     name = input("please write your name:")
     for i in range(5):
         grades = input("please write your grades:")
         if str(grades).lower() == "finish":
             break
         else:
-            grades = int(grades)
-            num = 0
-            grades += num
-    average = grades/i
+            grades = float(grades)
+            total_grades += grades
+    average = total_grades / i
     if 18 <= average <= 20:
-        average == "A"
+        average = "A"
     elif 14 <= average <= 18:
-        average == "B"
+        average = "B"
     elif 0 <= average <= 14:
-        average == "C"
+        average = "C"
     print(f"dear {name} your score is {average}")
 
 
 report_card()
-
 # ================================
 
 
