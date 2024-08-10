@@ -1,5 +1,21 @@
-# Triangle of stars
-n = int(input("Please enter an integer:"))
+def calculate_grade(*numbers):
+    name = input("Please enter your name:")
+    total, count = 0, 0
+    message = ""
+    print(numbers)
+    for num in numbers:
+        total += num
+        count += 1
+    grade = total / count
+    if 18 <= grade <= 20:
+        message = f"Dear {name}, your grade ({grade}) is A"
+    elif 14 <= grade < 18:
+        message = f"Dear {name}, your grade ({grade}) is B"
+    else:
+        message = f"Dear {name}, your grade ({grade}) is C"
 
-for i in range(n):
-    print(" " * (n-i-1) + "*" * (2 * i + 1))
+    return message
+
+
+print("Start")
+print(calculate_grade(14, 18, 20, 20, 19, 20))
