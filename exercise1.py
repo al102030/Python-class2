@@ -231,7 +231,7 @@ def report_card(*grades, name="student"):
             grades = int(grades)
             num = 0
             grades += num
-    average = int(grades)/i
+    average = grades/i
     if 18 <= average <= 20:
         average == "A"
     elif 14 <= average <= 18:
