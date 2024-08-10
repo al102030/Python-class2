@@ -363,3 +363,28 @@ A Python Programing full Crash cours in Kadoos EDU
   - This function convert each item of list to a `tuple`
   - Use for loop to show `kays` and `values` in a list (By indexing and unpacking)
   - Talk about for loop and represent items in each iteration
+
+- <span style="color: Red;">Adding or Removing Items</span>
+
+  - Use `append()` method to add an item to end of a list
+  - Use `insert()` method to add item at specific position in list
+  - Use `pop()` method to remove an item from end of a list (remove with index)
+  - Use `.remove(item)` to remove first occurrence of that item - remove without index
+  - To remove all`"b"` in the list you should loop over list
+  - Use `del lst[0]` to delete an item or `del lst[:3]` to delete a range of items
+  - This is difference between `pop()` and `del`
+  - Use `clear()` method to delete all items in the list
+
+- <span style="color: Red;">Finding Items</span>
+
+  - To find index of an item use `index(item)` method
+  - `index()` method return `ValueError` when try to find an item that is not exist
+  - Use `if .. in ..` statement to prevent this error
+  - Use `count(item)` method to check existence of an item
+
+- <span style="color: Red;">Sorting Lists</span>
+  - Use `sort()` method to sort a list
+  - Use `reverse` parameter as keyword argument to sort your list in descending format `lst.sort(key, reverse=True|False)`
+  - To sort a list without changing the original list use `sorted(lst)` function ex: `sorted(my_list, reverse=True)`
+  - To sort a list of unordered items (complex) like list of tuples we should write a function and use sort item and pass all items to this function
+  - We can <span style="color: Red;">pass</span> a function not `call` to the `sort()` method as `key` parameter
