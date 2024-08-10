@@ -326,4 +326,40 @@ A Python Programing full Crash cours in Kadoos EDU
   - To duplicate a line press `alt+shift+down` keys
   - By pressing `Ctrl+/` you can change a line to comment
   - By typing some characters of a variable you can place it by pushing enter
-  -
+
+### <span style="color: #03ce14;">Data Structure</span>
+
+- <span style="color: Red;">Lists</span>
+
+  - We use `[]` in Python to define a list or sequence of objects
+  - Talk about different type of list (list of numbers, list of lists like a matrix)
+  - `zeros = [0] * 100` / Use `+` to concatenate or `*` to multiply
+  - In python lists items doesn't need to be a same type
+  - Use `list()` method to convert objects to list like `list(range(20))` or `list("Hello")`
+  - `list()` function takes an `iterable` as argument
+  - Use `len()` method to get length of a list
+
+- <span style="color: Red;">Accessing Items</span>
+
+  - By using Bracket notation we can have access to a list items
+  - Talk about similar thing with regard strings
+  - To modifying items use assign element. Change list Items like `my_list[1] = "B"`
+  - Use [:] to get a range of items in list
+  - By slicing a list, original list doesn't change
+  - Use [::-1] to reverse a list ex: `my_list(range(20))[::-1]`
+
+- <span style="color: Red;">Unpacking Lists</span>
+
+  - We can Unpack a list into multiple variables
+  - `first, second, third = my_list`
+  - Left and right side must be equal in number (Check for error)
+  - Unpacking a large list : `first, second, *other = my_list` or `first, *other, last = my_list`
+  - Using a asterisk `*` before a variable change it to a list and it is a packing in Python
+
+- <span style="color: Red;">Lopping over Lists</span>
+
+  - Use for to loop over a list
+  - `enumerate()` function unpack list item to key and value
+  - This function convert each item of list to a `tuple`
+  - Use for loop to show `kays` and `values` in a list (By indexing and unpacking)
+  - Talk about for loop and represent items in each iteration
