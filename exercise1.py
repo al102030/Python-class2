@@ -198,7 +198,24 @@ print("Exercise 4")
 
 # Rastin
 # ================================
-# Your Code
+def num(score):
+    n = int(input("enter the numbers:"))
+    average = 0.0
+    if average >= 18:
+        M = 'A'
+    elif average >= 16:
+        M = 'B'
+    else:
+        M = 'C'
+    for item in range(1, n+1):
+        x = float(input("number"+str(item)+"="))
+        average += x
+    m = average // n
+    print("average is:", m)
+    print(M)
+# baz mesle tamrin ghabl if amal nemikone
+
+num()
 # ================================
 
 
