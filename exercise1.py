@@ -285,7 +285,20 @@ print("Exercise 5")
 
 # Rastin
 # ================================
-# Your Code
+def sharp(great):
+    number = int(input("please enter the number:"))
+    if int(number) % 5 == 0 and int(number) % 3 == 0:
+        print("buzz and fizz")
+    elif int(number) % 3 == 0:
+        print("fizz")
+    elif int(number) % 5 == 0:
+        print("buzz")
+    else:
+        print(number)
+    return great
+
+
+print(sharp("good job"))
 # ================================
 
 
