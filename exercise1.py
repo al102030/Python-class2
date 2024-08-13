@@ -336,5 +336,13 @@ random_name()
 
 # Rahan
 # ================================
-# Your Code
+# fizzbuzz = int(input(">>>"))
+if fizzbuzz % 5 == 0 and fizzbuzz % 3 == 0:
+    print("fizzbuzz")
+elif fizzbuzz % 3 == 0:
+    print("fizz")
+elif fizzbuzz % 5 == 0:
+    print("buzz")
+else:
+    print("try again")
 # ================================
