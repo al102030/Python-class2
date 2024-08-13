@@ -343,7 +343,17 @@ cyber()
 
 # Pantea
 # ================================
-# Your Code
+def check_the_num():
+    y = int(input("Enter The number: "))
+    if y % 5 == 0 and y % 3 == 0:
+        print("FizzBuzz!")
+    elif y % 3 == 0:
+        print("Fizz")
+    elif y % 5 == 0:
+        print("Buzz")
+    else:
+        print(y)
+
 # ================================
 
 
