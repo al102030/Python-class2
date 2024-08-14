@@ -377,14 +377,58 @@ A Python Programing full Crash cours in Kadoos EDU
 
 - <span style="color: Red;">Finding Items</span>
 
-  - To find index of an item use `index(item)` method
+  - To find index of an item use `.index(item)` method
   - `index()` method return `ValueError` when try to find an item that is not exist
   - Use `if .. in ..` statement to prevent this error
   - Use `count(item)` method to check existence of an item
 
 - <span style="color: Red;">Sorting Lists</span>
+
   - Use `sort()` method to sort a list
   - Use `reverse` parameter as keyword argument to sort your list in descending format `lst.sort(key, reverse=True|False)`
   - To sort a list without changing the original list use `sorted(lst)` function ex: `sorted(my_list, reverse=True)`
   - To sort a list of unordered items (complex) like list of tuples we should write a function and use sort item and pass all items to this function
   - We can <span style="color: Red;">pass</span> a function not `call` to the `sort()` method as `key` parameter
+  - You need to specify `key` parameter as keyword argument
+
+- <span style="color: Red;">Lambda Functions</span>
+
+  - A lambda function is a `one-line` anonymous function that we can pass to other functions
+  - Lambda function structure: <span style="color: #ef34dd;">lambda parameter: expression</span>
+
+- <span style="color: Red;">Map Function</span>
+
+  - To transform (map) a part of all items in a list of complex items we need to apply a for loop an get the desire value from it
+  - By using `map` function we can do it in a shorter and elegant way
+  - It returns a map object (an iterable) and by type conversion we can transform it to a list object (`list()`)
+  - We can loop over it or convert it to a list
+
+- <span style="color: Red;">Filter Function</span>
+
+  - When we need to apply a filter on a list and get a specific values `filter` function is the way
+  - `Filter` function takes a lambda function as first parameter and select items based on the lambda function criteria
+  - It returns an iterable object (`filter object`)
+  - We can loop over it or convert it to a list
+
+- <span style="color: Red;">List Comprehension</span>
+
+  - List comprehension in python: <span style="color: Orange;"> [Expression for item in items]</span>
+  - It's completely the same with the `mapping process` and `filtering process`
+
+- <span style="color: Red;">Zip Function</span>
+
+  - To merge two or more list in a single list of tuples we can use `zip` function
+  - It returns a `Zip object` which is a iterable
+  - Add a string to zip function and see the result
+
+- <span style="color: Red;">Stacks</span>
+
+  - A `LIFO` data structure (`example of Books`)
+  - Website's pages visiting hierarchy is good simple fore Stack
+  - We can use `.append()`, `.pop()` methods for simulating stack and `stc[-1]` and `not []' to check it
+  - `[]` is another falsy value
+
+- <span style="color: Red;">Queues</span>
+  - A `FIFO` data structure
+  - We use `deque` for optimize Using queue
+  - Use `.popleft()` and `deque` class to manage your queue in optimize way
