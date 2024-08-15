@@ -198,6 +198,8 @@ print("Exercise 4")
 
 # Rastin
 # ================================
+
+
 def num(score):
     n = int(input("enter the numbers:"))
     average = 0.0
@@ -214,6 +216,7 @@ def num(score):
     print("average is:", m)
     print(M)
 # baz mesle tamrin ghabl if amal nemikone
+
 
 num()
 # ================================
@@ -285,6 +288,8 @@ print("Exercise 5")
 
 # Rastin
 # ================================
+
+
 def sharp(great):
     number = int(input("please enter the number:"))
     if int(number) % 5 == 0 and int(number) % 3 == 0:
@@ -306,7 +311,7 @@ print(sharp("good job"))
 # ================================
 def random_name():
     number = int(input("Enter a number: "))
-    
+
     if number % 15 == 0:
         print("fizz buzz")
     elif number % 3 == 0:
@@ -359,7 +364,7 @@ def check_the_num():
 
 # Rahan
 # ================================
-# fizzbuzz = int(input(">>>"))
+fizzbuzz = int(input(">>>"))
 if fizzbuzz % 5 == 0 and fizzbuzz % 3 == 0:
     print("fizzbuzz")
 elif fizzbuzz % 3 == 0:
@@ -368,4 +373,38 @@ elif fizzbuzz % 5 == 0:
     print("buzz")
 else:
     print("try again")
+# ================================
+
+
+#####################################################################################################
+
+print("Exercise 6")
+
+# Rastin
+# ================================
+# Your Code
+# ================================
+
+
+# Mohammad
+# ================================
+# Your Code
+# ================================
+
+
+# Mehrad
+# ================================
+# Your Code
+# ================================
+
+
+# Pantea
+# ================================
+# Your Code
+# ================================
+
+
+# Rahan
+# ================================
+# Your Code
 # ================================
