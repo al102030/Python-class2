@@ -394,7 +394,12 @@ print("Exercise 6")
 
 # Mehrad
 # ================================
-# Your Code
+def power(number):
+    core = [num ** 2 for num in range(1, number+1) if num % 2 == 0]
+    return core
+
+
+print(power(16))
 # ================================
 
 
