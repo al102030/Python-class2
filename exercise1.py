@@ -418,5 +418,11 @@ if x % 2 == 0]
 
 # Rahan
 # ================================
-# Your Code
+# def square(number):
+    return [num ** 2 for num in range(1 ,number+1)if num % 2 == 0 ]
+
+
+
+
+print(square(10))
 # ================================
