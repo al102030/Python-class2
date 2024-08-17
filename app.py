@@ -39,8 +39,7 @@
 # fizz_buzz()
 
 def calculate_square(number):
-    my_list = list(range(1, number+1))
-    return [item**2 for item in my_list if item % 2 == 0]
+    return [item**2 for item in range(1, number+1) if item % 2 == 0]
 
 
 print(calculate_square(14))
