@@ -37,3 +37,9 @@
 
 
 # fizz_buzz()
+
+def calculate_square(number):
+    return [item**2 for item in range(1, number+1) if item % 2 == 0]
+
+
+print(calculate_square(14))
