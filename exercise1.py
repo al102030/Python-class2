@@ -382,7 +382,10 @@ print("Exercise 6")
 
 # Rastin
 # ================================
-# Your Code
+def calculate_square(num):
+    return [even**2 for even in range(1, num+1) if even % 2 == 0]
+    
+print(calculate_square(20))
 # ================================
 
 
