@@ -388,7 +388,9 @@ print("Exercise 6")
 
 # Mohammad
 # ================================
-# Your Code
+def calculate_square(number):
+    return [even**2 for i in range(1, number+1) if even % 2 == 0]
+
 # ================================
 
 
