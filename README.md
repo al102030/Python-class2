@@ -498,3 +498,16 @@ A Python Programing full Crash cours in Kadoos EDU
   - Practice on writing list comprehension (Change it to a set)
   - We can use Comprehension for sets and dictionaries
   - `Val = {x : x*2 for x in range(5)}`
+
+- <span style="color: Red;">Generator Expression</span>
+
+  - Comprehension on tuples return a `Generator Objects`
+  - Generator object like list is a iterable but generate value in each iteration
+  - Generators don't store all values in memory
+  - `len()` function doesn't work on generator object
+
+- <span style="color: Red;">Unpacking Operator</span>
+  - We can print items of a list by using `[*numbers]` statement
+  - We can use unpacking operators to combine lists
+  - Also unpack operator work abut dictionaries by using `**`
+  - If we have multiple item in our dictionaries, the last item will be used
