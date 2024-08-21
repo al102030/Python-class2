@@ -507,7 +507,63 @@ A Python Programing full Crash cours in Kadoos EDU
   - `len()` function doesn't work on generator object
 
 - <span style="color: Red;">Unpacking Operator</span>
+
   - We can print items of a list by using `[*numbers]` statement
   - We can use unpacking operators to combine lists
   - Also unpack operator work abut dictionaries by using `**`
   - If we have multiple item in our dictionaries, the last item will be used
+
+<hr>
+
+### <span style="color: #03ce14;">Exceptions</span>
+
+- <span style="color: Red;">Exceptions</span>
+
+  - An exception is a kind of error that terminate the execution of the program
+  - Like `index error` in lists or getting `None` value is input from user
+  - By using a `try exception` block we can handel potential errors
+  - If you don't handel exceptions properly your program will crash
+  - All codes after try block will be executed after accruing an exception
+  - By adding an `else` statement to your try block, if no exception is thrown else block code wil be executed
+  - It's possible that different kind of exceptions happens and it's important to handel them
+  - We can define `multiple exception` block for our try clause or put all potential exceptions in one exception block (`inside a parentheses`)
+  - If one of our try block exceptions be executed other exceptions will be ignored
+  - We should release the external resources like files or network connections after finishing our job with them
+  - To prevent duplicate or release external resources, we need to define a `finally` at the end of your try block
+  - Also we can use `with` statement in the case of working with external resources
+  - This resources will be released when the program doesn't need the anymore
+  - If any object in python supports <span style="color: Red;">context management protocol</span>, we should open them by `with` statement
+  - These files has two `__enter__` and `__exit__` magic method
+  - We can open multiple file with one `with` statement
+  - We can `raise` an exception by using this statement
+  - Check Python 3 built-in exceptions In Google
+  - We can manage all raises exceptions by try block
+  - Using `Try-exception` is costly and only use it for sample and small programs
+  - `Pass` statement is necessary when we need to do nothing
+  - Think about using `try` block if you can handel it with a sample `if` statement
+
+<hr>
+
+### <span style="color: #03ce14;">Classes</span>
+
+- <span style="color: Red;">Classes</span>
+
+  - A class is a blueprint or template that defines the structure and behavior of an object
+  - Talk again about `type()` method
+  - An `instance` of a class represents a specific, unique occurrence of that class, with its own set of `data` and the ability to perform `actions` defined by the class
+  - Wrap up: A `Class` is a blueprint for creating new objects
+  - Wrap up: An `Object` is an instance of a class
+  - Classes form the building `blocks` for organizing and manipulating data in a comprehensive and organized manner, enabling `efficient` and `reusable` software development
+  - Examples of classes and instances in real world
+
+- <span style="color: Red;">Creating Classes</span>
+
+  - `Class` statement is start for creating a class
+  - We follow Pascal naming conventions in classes naming
+  - We can create an object by calling a class and assign it to a variable (`Object name`)
+  - All method in a class should have at least one parameter named `self`
+  - Later in the course we talk about self and magic methods
+  - By using `isinstance()` method we can check that an object is instance of a certain class
+
+- <span style="color: Red;">Constructors</span>
+  - o

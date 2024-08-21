@@ -38,8 +38,26 @@
 
 # fizz_buzz()
 
-def calculate_square(number):
-    return [item**2 for item in range(1, number+1) if item % 2 == 0]
+# def calculate_square(number):
+#     return [item**2 for item in range(1, number+1) if item % 2 == 0]
 
 
-print(calculate_square(14))
+# print(calculate_square(14))
+
+my_text = "This is a common interview question"
+
+
+def char_frequency(text):
+    my_dict = {}
+    for char in text:
+        if char in my_dict:
+            my_dict[char] += 1
+        else:
+            my_dict[char] = 1
+    my_dict_sorted = sorted(my_dict.items(),
+                            key=lambda kv: kv[1],
+                            reverse=True)
+    return my_dict_sorted[0]
+
+
+print(char_frequency(my_text))
