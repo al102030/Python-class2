@@ -549,9 +549,68 @@ A Python Programing full Crash cours in Kadoos EDU
 - <span style="color: Red;">Classes</span>
 
   - A class is a blueprint or template that defines the structure and behavior of an object
-  - Talk again about `type()` method
   - An `instance` of a class represents a specific, unique occurrence of that class, with its own set of `data` and the ability to perform `actions` defined by the class
   - Wrap up: A `Class` is a blueprint for creating new objects
   - Wrap up: An `Object` is an instance of a class
   - Classes form the building `blocks` for organizing and manipulating data in a comprehensive and organized manner, enabling `efficient` and `reusable` software development
   - Examples of classes and instances in real world
+
+- <span style="color: Red;">Creating Classes</span>
+
+  - We follow Pascal naming conventions in classes naming
+  - By using `class` keyword we can define our custom classes
+  - We can define a object by calling a class and assign it to a variable
+  - Talk about inheritance related to classes and Python objects
+  - Talk again about `type()` method
+  - By using `isinstance()` method we can check that an object is instance of a certain class
+  - We cannot use a class without making an instance of it
+
+- <span style="color: Red;">Constructors</span>
+
+  - `__init__` method is especial `magic method` that executed when a new object was creating
+  - `self` is reference to the current new object
+  - Python create our new object and put it in memory and reference that in self statement
+  - An object has its own attributes that have data which related to it
+  - For example human is class that have its `attributes` like eye color, skin color, hight, wight, and etc, and its functions like walking, jumping, eating, and etc
+  - Python fill self variable automatically for us, when an object is created
+  - We can use self to call this object attributes or functions
+  - To use functions of an object it's not necessary to put object name in function arguments. Python does it automatically
+
+- <span style="color: Red;">Class vs Instance Attributes</span>
+
+  - We can define a new attribute for an object after creating it
+  - `Objects in python are dynamic`
+  - `Instance attributes` belong to each object separately
+  - `Class level attributes` are shared across all instances of a class
+  - We can use a class level attribute without making an instance
+
+- <span style="color: Red;">Class vs Instance Methods</span>
+
+  - When we create an instance of a class, we can use its functions as instance methods
+  - These methods really need to work a specific object
+  - `Zero()` method is factory method
+  - To create a class level method we need to use `cls` statement instead of `self`
+  - Also we need a `decorator` to extend our method behavior
+
+- <span style="color: Red;">Magic Methods</span>
+
+  - Magic methods called by python interpreter automatically depend on who we use our objects or classes
+  - Search Python 3 magic methods in google
+  - Print point object and talk about the type
+  - Use `str` magic method as example to convert variables to string
+
+- <span style="color: Red;">Comparing Objects</span>
+
+  - Two object of a Class with same attributes are completely different because they have different references in memory
+  - We should use `__eq__` magic methods to represent a comparable form of our class and check equality
+  - Implement `__gt__` method and check it for `<` and `>` operators
+  - If you implement a magic method python automatically figure out what to do if you use the other one
+
+- <span style="color: Red;">Performing Arithmetic Operations</span>
+
+  - Use `__add__` magic method to sum to object
+  - Save the result to another variable and print an attribute of it
+
+- <span style="color: Red;">Creating Custom Containers</span>
+
+  - U
