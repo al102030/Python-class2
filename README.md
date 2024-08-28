@@ -613,4 +613,33 @@ A Python Programing full Crash cours in Kadoos EDU
 
 - <span style="color: Red;">Creating Custom Containers</span>
 
-  - U
+  - We can define our custom Container using python built-in data structures like dictionary
+  - Define `add` method for our TagCloud class
+  - Use get method to get item
+  - Convert tags to lowercase through getting item
+  - Define basic options for your Custom TagCloud like `len()`, `set`, and `get` items
+
+  - <span style="color: Red;">Private Members</span>
+
+  - To make an attribute unaccessible from outside a class prefix it with two underline
+  - Check this by . notation on an instance of your object
+  - This member is still accessible but is hard to access and it's a kind of warring
+  - Check `__dict__` method (It's dictionary that all the attribute of a class)
+  - Python automatically prefix an attribute with the class name
+
+- <span style="color: Red;">Properties</span>
+
+  - To have control over attributes we can define set-get method to control values (It's not Pythonic)
+  - Also we Can use a more Pythonic way that called properties
+  - Define a class attribute using `property()` method
+  - Only path a reference to get and set method
+  - You have access to your property and easily can set or get it
+  - set and get method pollute your object interface
+  - You can make them unaccessible by adding two underline but its not good
+  - Also you can `@property` decorator to make your code professional
+  - Change the set and get method name to ideal name
+  - Add `@name.setter` proChange your constructor and your attribute to regular one
+
+- <span style="color: Red;">Inheritance</span>
+
+  - T
