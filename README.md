@@ -642,4 +642,61 @@ A Python Programing full Crash cours in Kadoos EDU
 
 - <span style="color: Red;">Inheritance</span>
 
-  - T
+  - Classes with same method can make your code busy and noisy hard to maintain
+  - Avoid `DRY`. it means: `D`on't `R`epeat `Y`ourself
+  - We can use `inheritance` or `composition` to solve this problem
+  - Inheritance is a mechanism that allows us to define common behavior or common functions in one class and then inherit them in other classes
+  - We use `parentheses` in front of a class name and write the `parent class` inside it to inherit all attributes and methods from `Base class` to `Sub class`
+  - Sub class inherit all methods and attributes from base class
+
+- <span style="color: Red;">The Object Class</span>
+
+  - Use `isinstance()` Method to reveal relationship between classes and object class
+  - `Object` class is base class for all classes in python
+  - Check inheritance between a class and object class by `isinstance()` and inspecting an instance of both of them
+  - `issubclass()` method return True if a class is subclass of another class
+
+- <span style="color: Red;">Method Overriding</span>
+
+  - When we use a subclass, some methods like constructor are overriding the Base class constructor
+  - By using `super()` method we can call base class constructor in a sub class
+  - To change the sequence of call super() method we can change the position of method
+  - To recap method overriding means replacing or extending a method defined in base class
+
+- <span style="color: Red;">Multi-level Inheritance</span>
+
+  - Inheritance prevent code duplication and allows us to reuse code
+  - Too much Inheritance between classes can increase complexity and introduce lots of issues (Too much of a good thing is bad thing)
+  - Remember, We should use multi-level inheritance in `one` or `two` level, not more
+
+  - <span style="color: Red;">Multiple Inheritance</span>
+
+  - If You use multiple Inheritance not properly it's gonna be source of issues
+  - In multiple Inheritance python interpreter, first look for specific method in sub class and after that try to find it in multiple parents class in order from left to right
+  - Multiple inheritance is not a bad thing, just like multi-level inheritance, if you don't use it properly it can cause problems
+  - Before using multiple inheritance, check that the parent classes should have the minimum subscription
+
+  - <span style="color: Red;">A Good Example of Inheritance</span>
+
+  - A good Example of Inheritance on streaming from file and network in our web application
+
+  - <span style="color: Red;">Abstract Base classes</span>
+
+  - In our good example of inheritance, we have two serious problems:
+    - We should built a sub class of Stream class and then use it
+    - If we need to define a new sub class for Stream class, we should define read() method exactly like other sub stream classes
+  - In this case we should Covert Stream class to an `abstract base` class
+  - It's like a half baked cookie
+  - We need to import `ABC` class and `abstractmethod` decorator from `abc` module
+  - Remember we cannot instantiate a abstract class (we con not make instance of it)
+  - If a class derive from a abstract class it has to implement its abstract methods
+
+  - <span style="color: Red;">Polymorphism</span>
+
+  - `Poly` means many, `Morph` means form
+  - By define a abstract method and concrete a method our functions can use many forms of classes automatically
+  - A function can deal with concrete methods of different classes automatically
+
+  - <span style="color: Red;">Duck Typing</span>
+
+  - o
