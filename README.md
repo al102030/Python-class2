@@ -694,9 +694,83 @@ A Python Programing full Crash cours in Kadoos EDU
 - <span style="color: Red;">Polymorphism</span>
 
   - `Poly` means many, `Morph` means form
+  - It enables objects of different types to be treated as objects of a common superclass
   - By define a abstract method and concrete a method our functions can use many forms of classes automatically
   - A function can deal with concrete methods of different classes automatically
 
 - <span style="color: Red;">Duck Typing</span>
 
-- o
+  - To use Polymorphism we define a abstract class with common behavior and create subclasses with that behavior
+  - If something like duck and quacks like duck, it's a duck
+  - Python is dynamically type language and it doesn't check the type of object
+  - If a certain method exist in object python accept it as abstract base method
+
+- <span style="color: Red;">Extending Built-it Types</span>
+
+  - We can extend a built-in class like string class in python and give it more functionality by define a new class
+  - Do it for list
+
+- <span style="color: Red;">Data Classes</span>
+  - In Python we have classes that have only data and do not show any behavior
+  - We can use `id()` method to print physical address of an object
+  - We can use `namedtuple` library to define a class that have only data
+  - `namedtuples` are immutable
+
+### <span style="color: #03ce14;">Modules</span>
+
+- <span style="color: Red;">Creating Modules</span>
+
+  - A real program can contain tens of thousand lines of code
+  - We write python code in separate modules
+  - Python modules naming is like variables
+  - Each module contain highly related objects (functions, variables, classes, etc.)
+  - We can use objects in one file inside of another file by call theme by `from ... import` statement
+  - By pressing `ctrl+space` after modules name in import statement we can see all methods and classes inside that modules
+  - Using `*` to import all objects in a module can caused a overwriting and malfunction
+  - If we used `import` statement only we should call objects by adding module name bef ore of any object `(sales.calc_tax())`
+
+- <span style="color: Red;">Compiled Python Files</span>
+
+  - When we import a module inside another module python after first time running code make a compiled version of module to speed up in code execution later
+  - Python look at the time of edit of compiled file for updating it
+  - Name of the compiled file contain the version of `cpython` that used to execute this code
+  - These files contain python `bytecodes`
+
+- <span style="color: Red;">Module Search Paths</span>
+
+  - When we import a module at start of compiling a py file python look for finding that module in some predefined directories which come with the python installation
+
+- <span style="color: Red;">Packages</span>
+
+  - When we want to organize our python files in separate directories we should make `packages`
+  - Adding `__init__.py` file to a directory convert it to a python package
+  - A package is container for one or more modules
+
+- <span style="color: Red;">Sub-Packages</span>
+
+  - After add new directory we should add `init` file
+  - And make change in import statement
+
+- <span style="color: Red;">Intra-packages References</span>
+
+  - To import a module inside another module of another package we can use `absolute ot relative` statement
+  - Absolute import is better and `PEP*` recommend it
+
+- <span style="color: Red;">The dir() Function</span>
+
+  - `dir()` is a built-function that show all methods inside a module
+
+- <span style="color: Red;">Executing Modules as Script</span>
+
+  - When a module load for the first time all statement in it will be executed
+  - The name of the module that starts our program is always `main`
+  - After add `if name == "main":` to a module when run in directly the the block code of it will be executed. but when imported it into another file this part of code will be ignored
+  - by this way we make this file useable as script as well as reuseable module that we can import into another module
+
+### <span style="color: #03ce14;">Python Standard Library</span>
+
+- <span style="color: Red;">Working With Path</span>
+
+  - After import `path` library we ca use it in different ways
+  - search python 3 `pathlibnin` google
+  - The most important members of this library is
