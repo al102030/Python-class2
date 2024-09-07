@@ -669,18 +669,18 @@ A Python Programing full Crash cours in Kadoos EDU
   - Too much Inheritance between classes can increase complexity and introduce lots of issues (Too much of a good thing is bad thing)
   - Remember, We should use multi-level inheritance in `one` or `two` level, not more
 
-  - <span style="color: Red;">Multiple Inheritance</span>
+- <span style="color: Red;">Multiple Inheritance</span>
 
   - If You use multiple Inheritance not properly it's gonna be source of issues
   - In multiple Inheritance python interpreter, first look for specific method in sub class and after that try to find it in multiple parents class in order from left to right
   - Multiple inheritance is not a bad thing, just like multi-level inheritance, if you don't use it properly it can cause problems
   - Before using multiple inheritance, check that the parent classes should have the minimum subscription
 
-  - <span style="color: Red;">A Good Example of Inheritance</span>
+- <span style="color: Red;">A Good Example of Inheritance</span>
 
   - A good Example of Inheritance on streaming from file and network in our web application
 
-  - <span style="color: Red;">Abstract Base classes</span>
+- <span style="color: Red;">Abstract Base classes</span>
 
   - In our good example of inheritance, we have two serious problems:
     - We should built a sub class of Stream class and then use it
@@ -691,12 +691,12 @@ A Python Programing full Crash cours in Kadoos EDU
   - Remember we cannot instantiate a abstract class (we con not make instance of it)
   - If a class derive from a abstract class it has to implement its abstract methods
 
-  - <span style="color: Red;">Polymorphism</span>
+- <span style="color: Red;">Polymorphism</span>
 
   - `Poly` means many, `Morph` means form
   - By define a abstract method and concrete a method our functions can use many forms of classes automatically
   - A function can deal with concrete methods of different classes automatically
 
-  - <span style="color: Red;">Duck Typing</span>
+- <span style="color: Red;">Duck Typing</span>
 
-  - o
+- o
