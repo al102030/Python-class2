@@ -819,3 +819,66 @@ A Python Programing full Crash cours in Kadoos EDU
   - Insert data into database using a SQL `INSERT` query text
   - Read data from database using a SQL `SELECT` query text
   - When we try to read from database we'll get cursor
+
+- <span style="color: Red;">Working With Timestamps</span>
+
+  - To work with time and date in python we can use two modules (`time`, `datetime`)
+  - Time module returns `timestamp` and datetime module returns an object that contains many attributes like `year`, `month`, and ...
+  - Start of timestamp in unix base systems is a actual date (`1970-1-1`) and timestamp demonstrates all seconds from that time
+
+- <span style="color: Red;">Working With DatetTimes</span>
+
+  - `DateTime` object can converts a date to python object
+  - `DateTime` can show currents date time by method `now()`
+  - `DataTime` object can converts `strings` to real datetime by `strptime()` method (by using a pattern like ("%Y/%m/%d"))
+  - Search Python 3 `Strptime` in <span style="color: Orange;">Google</span>
+  - `DataTime` object can converts timestamp object to string by `fromtimestamp()` method
+  - `DataTime` object can converts datetime object to string by `strftime()` method
+  - We can compare datetime objects
+
+- <span style="color: Red;">Working With Time Deltas</span>
+
+  - We can add or subtract a duration from our datetime object
+  - `timedelta` has it's attributes and methods
+
+- <span style="color: Red;">Generating Random Values</span>
+
+  - We can make random values by using `random` module
+  - We use `string` module to give choices method all ascii letters and numbers to generate a good password
+  - By using `join()` method we can join all items in a list together
+
+- <span style="color: Red;">WebBrowser Module</span>
+
+  - We can open a web browser by using `webbrowser` Module
+
+- <span style="color: Red;">Send Email</span>
+
+  - We can send email by using email `module`
+  - First we should add all info that an email need to be sended by `sntp` protocol
+
+- <span style="color: Red;">Line Arguments</span>
+
+  - By using `argv` module we can have access to command prompt extra codes like `user` or `password` attributes which have been written by user
+
+### <span style="color: #03ce14;">Python Package Index</span>
+
+- <span style="color: Red;">Pypi</span>
+
+  - There are times that we need features that not implemented in the Python standard libraries
+  - We use `Pypi`(Python Packaging Index) to import lots of useful libraries to our program
+  - Visit <span style="color: #5599ff;">pypi.org</span> and search on it to find your desireable package
+  - Search in google: `"Best python packages for working with ..."`
+
+- <span style="color: Red;">Pip</span>
+
+  - We use tool named `pip` to manage our packages
+  - Use `"pip install 'package-name'"` to install a package
+  - We can use `'pip list'` to check our installed packages
+  - Check a package like `requests` in <span style="color: #5599ff;">pypi.org</span>
+  - By adding `==` and the a specific version number we can install an earlier or older version of a package(`requests==2.9.*`) (`~`)
+  - use `pip uninstall 'package-name'` to uninstall a package
+  - Import an installed packages in python file as example
+
+- <span style="color: Red;">Virtual Environments</span>
+
+  - W

@@ -1,8 +1,10 @@
-from pathlib import Path
+import zipfile
+import csv
+import json
+import requests
 
-path = Path("ecommerce/__init__.py")
-
-print(path.read_text())
+response = requests.get("https://www.google.com/")
+print(response)
 
 # def calculate_grade(*numbers):
 #     name = input("Please enter your name:")
@@ -164,3 +166,22 @@ print(path.read_text())
 
 # solution = Solution()
 # print(solution.generate(4))
+
+
+json_data = "YOUR_JSON_TEXT"
+
+data = json.loads(json_data)
+
+json_filename = 'data.json'
+with open(json_filename, 'w', encoding='utf-8') as json_file:
+    json.dump(data, json_file, indent=4)
+
+csv_filename = 'data.csv'
+with open(csv_filename, 'w', newline='', encoding='utf-8') as csv_file:
+    csv_writer = csv.writer(csv_file)
+    csv_writer.writerows(data)
+
+zip_filename = 'data_files.zip'
+with zipfile.ZipFile(zip_filename, 'w') as zip_file:
+    zip_file.write(json_filename)
+    zip_file.write(csv_filename)
