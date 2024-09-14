@@ -769,8 +769,53 @@ A Python Programing full Crash cours in Kadoos EDU
 
 ### <span style="color: #03ce14;">Python Standard Library</span>
 
+- <span style="color: Red;">What we are going to learn</span>
+
+  - Working with the `path`, `Files`, `SQLite`, `Date/Time`, `Random values` and So on...
+
 - <span style="color: Red;">Working With Path</span>
 
   - After import `path` library we ca use it in different ways
-  - search python 3 `pathlibnin` google
-  - The most important members of this library is
+  - We can use `raw strings` to scape lots of double `\\`
+  - search python 3 `pathlib` in google
+  - The most important methods of this library is `exist()`, `is_file()`, `is_dir()`, `with_name()` and ...
+
+- <span style="color: Red;">Working With Directories</span>
+
+  - Important methods in `Pathlib` library for work with directories
+  - We use `iterdir()` method to get list of files and directories in a particular directory
+  - It returns a generator object because a directory can contain a millions of files within
+  - We use `glob()` method to find files based on a specific pattern
+  - We use `rglob()` method to find files based on a specific pattern recursively
+
+- <span style="color: Red;">Working With Files</span>
+
+  - Useful methods to working with files is `exist()`, `unlink()`, `rename()`, `stat()` and ...
+  - Use `time` module to convert `timestamp` to a human readable format
+  - By using `read_text(_)` or `read_bytes()` and also `write_text(_)` or `write_bytes()` methods we can change content our file
+  - We can use `shutil` library to copy files instead of using `read_text(_)` or `write_text()` methods
+
+- <span style="color: Red;">Working With ZIP and CSV Files</span>
+
+  - To work with zip file Use `zipfile` library
+  - To work with CSV file Use `csv` library
+  - `csv` is acronym for `Comma Separated Values`
+  - After importing csv module we use open built-in function to `open()` a csv file
+  - By using `writer()` method we can built a csv file and write data in it
+  - By using `reader()` method we can read from a csv file
+  - By using `list()` method we can make a list of csv rows
+
+- <span style="color: Red;">Working With JSON Files</span>
+
+  - `JSON` is `javaScript Object Notation`
+  - We use `JSON` to format data in human readable way
+  - To answer the requests that ask some data from your website you need to provide data in JSON format
+  - Note that `dump()` and `load()` convert between files and objects, while `dumps()` and `loads()` convert between strings and objects
+
+- <span style="color: Red;">Working With SQLite Database</span>
+
+  - `SQLite` is very light weight Database that we use to store data of an application
+  - We can use `SQLite Database browser` to manage our sqlite db file in visual (download `db browser for sqlite` from google)
+  - Insert data into database using a SQL `INSERT` query text
+  - Read data from database using a SQL `SELECT` query text
+  - When we try to read from database we'll get cursor
