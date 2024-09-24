@@ -881,4 +881,45 @@ A Python Programing full Crash cours in Kadoos EDU
 
 - <span style="color: Red;">Virtual Environments</span>
 
-  - W
+  - When we need to work with two different version of a package in two separated projects simultaneously we should create a `virtual environment` for each of them
+  - By `python -m venv env` we can make a virtual environment for our project
+  - Our packages would be installed inside the `site-packages` directory
+  - In windows, to active the virtual environment we should use this command: `env\bin\activate.bat`
+  - We use `deactivate` command to deactivate `venv`
+
+- <span style="color: Red;">Pipenv</span>
+
+  - `Pipenv` is tool that combine pip with virtual environment to a single tool
+  - Install pipenv using pip first
+  - To install packages using pipenv we use `pipenv` command instead of `pip` in `pip install` command
+  - We can locate our new virtual environment by command: `pipenv --venv`
+  - We activate our virtual environment by this command : `pipenv shell` and deactivate it by `exit`
+  - In vscode we need some configuration to use pipenv
+  - After implementing pipnv you need to change the path of python to your project virtual environment directory
+  - `pipfile` and `pipfile.lock` help to keep track of our project dependencies
+  - In another computer by using `pipenv install` we can install all our projects' dependencies (It looks for pipfile)
+  - To install all packages in their actual version that used in the time of developing of the package
+  - `pipenv graph` shows you all installed dependencies
+  - By using `pipenv uninstall` you can remove a dependency
+  - To find the out dated packages we can use `pipenv update --outdated`
+  - By using `pipenv update` we can update our dependencies
+  - `pydoc3 math` show the documentation of math library
+  - `pydoc -w PACKAGE_NAME` can convert a package to `HTML` file
+
+### <span style="color: #03ce14;">Tkinter</span>
+
+- <span style="color: Red;">GUI Application</span>
+
+  - Create virtual environment and run it
+  - Install `tkinter` library (`pipenv install tk`)
+  - Install `pyinstaller` library
+  - Create your `part_manager.py` file
+  - Create your `db.py` file
+  - Import `tkinter` library (`import tkinter as tk`)
+  - `mainloop()` method Keep your app run permanently
+  - Change your app title
+  - You need to pass a button to your root application
+  - We can add `grid` geometry to add button to our application
+  - `grid` is most compatible geometry manager that is most flexible with all kind of applications
+  - By using `geometry()` method we can apply size to our app
+  - Add some widget to your app (`Label`, `textbox` and ...)

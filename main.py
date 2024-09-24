@@ -1,10 +1,64 @@
-import zipfile
-import csv
-import json
-import requests
+import tkinter as tk
 
-response = requests.get("https://www.google.com/")
-print(response)
+# tk._test()
+# Create Window Object
+app = tk.Tk()
+
+
+# Part
+part_text = tk.StringVar()
+part_label = tk.Label(app, text='Part Name', font=('bold', 14), pady=20)
+part_label.grid(row=0, column=0, sticky='W')
+part_entry = tk.Entry(app, textvariable=part_text)
+part_entry.grid(row=0, column=1)
+
+# Customer
+customer_text = tk.StringVar()
+customer_label = tk.Label(app, text='Customer', font=('bold', 14))
+customer_label.grid(row=0, column=2, sticky='W')
+customer_entry = tk.Entry(app, textvariable=customer_text)
+customer_entry.grid(row=0, column=3)
+
+# Retailer
+retailer_text = tk.StringVar()
+retailer_label = tk.Label(app, text='Retailer Name', font=('bold', 14))
+retailer_label.grid(row=1, column=0, sticky='W')
+retailer_entry = tk.Entry(app, textvariable=retailer_text)
+retailer_entry.grid(row=1, column=1)
+
+# Price
+price_text = tk.StringVar()
+price_label = tk.Label(app, text='Price', font=('bold', 14))
+price_label.grid(row=1, column=2, sticky='W')
+price_entry = tk.Entry(app, textvariable=price_text)
+price_entry.grid(row=1, column=3)
+
+# Parts List (ListBox)
+parts_list = tk.Listbox(app, height=8, width=50, border=0)
+parts_list.grid(row=3, column=0, columnspan=3, rowspan=6, pady=20, padx=20)
+
+# Create scrollbar
+scrollbar = tk.Scrollbar(app)
+scrollbar.grid(row=3, column=3)
+# Set scrollbar to listbox
+parts_list.configure(yscrollcommand=scrollbar.set)
+scrollbar.configure(command=parts_list.yview)
+
+
+app. geometry('700x350')
+app.title("Simple App")
+
+# Start Program
+app.mainloop()
+
+
+# import zipfile
+# import csv
+# import json
+# import requests
+
+# response = requests.get("https://www.google.com/")
+# print(response)
 
 # def calculate_grade(*numbers):
 #     name = input("Please enter your name:")
@@ -168,20 +222,20 @@ print(response)
 # print(solution.generate(4))
 
 
-json_data = "YOUR_JSON_TEXT"
+# json_data = "YOUR_JSON_TEXT"
 
-data = json.loads(json_data)
+# data = json.loads(json_data)
 
-json_filename = 'data.json'
-with open(json_filename, 'w', encoding='utf-8') as json_file:
-    json.dump(data, json_file, indent=4)
+# json_filename = 'data.json'
+# with open(json_filename, 'w', encoding='utf-8') as json_file:
+#     json.dump(data, json_file, indent=4)
 
-csv_filename = 'data.csv'
-with open(csv_filename, 'w', newline='', encoding='utf-8') as csv_file:
-    csv_writer = csv.writer(csv_file)
-    csv_writer.writerows(data)
+# csv_filename = 'data.csv'
+# with open(csv_filename, 'w', newline='', encoding='utf-8') as csv_file:
+#     csv_writer = csv.writer(csv_file)
+#     csv_writer.writerows(data)
 
-zip_filename = 'data_files.zip'
-with zipfile.ZipFile(zip_filename, 'w') as zip_file:
-    zip_file.write(json_filename)
-    zip_file.write(csv_filename)
+# zip_filename = 'data_files.zip'
+# with zipfile.ZipFile(zip_filename, 'w') as zip_file:
+#     zip_file.write(json_filename)
+#     zip_file.write(csv_filename)
