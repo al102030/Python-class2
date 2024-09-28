@@ -26,6 +26,7 @@ for person in people:
     domtree.writexml(open('people.xml', 'w'))
 
 
+
 # import xml.sax
 
 
@@ -62,6 +63,13 @@ for person in people:
 # parser = xml.sax.make_parser()
 # parser.setContentHandler(handler)
 # parser.parse('people.xml')
+
+
+
+
+
+
+
 
 # import zipfile
 # import csv
