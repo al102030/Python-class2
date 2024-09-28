@@ -1,0 +1,20 @@
+<people>
+  <person id="1">
+    <name>John Doe</name>
+    <age>30</age>
+    <weight>75</weight>
+    <height>180</height>
+  </person>
+  <person id="2">
+    <name>Jane Smith</name>
+    <age>25</age>
+    <weight>60</weight>
+    <height>165</height>
+  </person>
+  <person id="3">
+    <name>Mike Johnson</name>
+    <age>40</age>
+    <weight>85</weight>
+    <height>175</height>
+  </person>
+</people>

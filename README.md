@@ -812,6 +812,22 @@ A Python Programing full Crash cours in Kadoos EDU
   - To answer the requests that ask some data from your website you need to provide data in JSON format
   - Note that `dump()` and `load()` convert between files and objects, while `dumps()` and `loads()` convert between strings and objects
 
+- <span style="color: Red;">Working With XML Files</span>
+
+  - `XML` means eXtensible Markup Language (not programming language)
+  - It was designed for storing, organize, and transport data
+  - It has no predefined tags
+  - XML separates information for presentation
+  - XML tags doesn't look like anything in the browser
+  - `prolog` is the first line of xml and it's optional
+  - `<?xml version=1.0 encoding="UTF-8"?`
+  - Your xml file has root element tag all elements have to start with opening tag `<tag_name>` and closing tag `</tag_name>` (it's a case sensitive language)
+  - Nesting is important and avoid mismatch
+  - There is two different modules that allows us to work with xml file `xml.sax` and `xml.dom`
+  - In `sax` we never load whole file in to the ram and we only load the pieces that we need and we can't change content (very large xml file)
+  - In `dom` we load whole file into the ram and we can read write and change file in a hierarchical structure
+  - We need a `handler` (work with file) and `parser` (translate file)
+
 - <span style="color: Red;">Working With SQLite Database</span>
 
   - `SQLite` is very light weight Database that we use to store data of an application
@@ -918,8 +934,39 @@ A Python Programing full Crash cours in Kadoos EDU
   - Import `tkinter` library (`import tkinter as tk`)
   - `mainloop()` method Keep your app run permanently
   - Change your app title
-  - You need to pass a button to your root application
-  - We can add `grid` geometry to add button to our application
+  - You need to add a widget to your root application
+  - By calling `StringVar()`, `Label()`, and `Entry()` methods we can create a data entry section
+  - We can add `grid` geometry to add a button to our application
   - `grid` is most compatible geometry manager that is most flexible with all kind of applications
   - By using `geometry()` method we can apply size to our app
   - Add some widget to your app (`Label`, `textbox` and ...)
+  - Create a `listbox` using `Listbox()` method for your app to show items
+  - `rowspan` and `columnspan` give more space to your grid cells vertically and horizontally
+  - Now we need a `scrollbar`. Create it with `Scrollbar()` method and place it in the third column
+  - By using `configure()` method we can stick our scrollbar to listbox
+  - `command` option set scroll behavior
+  - Now we need to add our buttons to app by using `Button()` method
+  - For `command` option we need to path a <span style="color: Red;">function</span> that do something when user push the button
+  - Define your command functions at top of the file
+  - Now we need to define our database in `db.py` file
+  - It's more better, organized and optimized to use class
+  - In our class `constructor` we need to define db and connection to it
+  - Also we should define `table` at first if it doesn't exist
+  - Now we need to define `CRUD` operations in the form of the `class methods`
+  - After define `cursor` in each method you need execute your <span style="color: lightgreen;">SQL</span> command and finally <span style="color: Red;">commit</span> it
+  - Give your values to cursor in the form of <span style="color: Red;">tuple</span>
+  - In the case of deleting an object it's important that you have a `deconstructing` method in your class
+  - Now create an object with your class and insert some date into it (Use my_file repo)
+  - Import your `Database` class inside part_manager module and instantiate it
+  - Now we can all our methods inside the db module and place them in the functions that we define for buttons
+  - `populate_list` echo all records inside the database
+  - First delete all items in listbox and import database information into it
+  - Define `add_item` method and use it as command for `Add Part` button
+  - Your app add item even all textbox are empty and you should avoid it by using `messagebox` and check input
+  - To remove an item we need to find its `id` by another method called `select_item` whcih we define to get selected item in the list
+  - Our select item should get an `event` that is binded to our <span style="color: lightgreen;">Listbox SELECT</span>
+  - Also we need to fill textboxes with actual info in data base after selection
+  - To remove an item just by passing first element of selected item to `remove()` method we can do it
+  - For `Update` you should give the selected item id and all textboxes info to update method
+  - Now you can create an executable file of your application by using `pyinstaller` module ad this command:
+  - `"pyinstaller --onefile --windowed app.py"`

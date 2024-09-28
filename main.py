@@ -1,56 +1,67 @@
-import tkinter as tk
+# import xml.dom.minidom
 
-# tk._test()
-# Create Window Object
-app = tk.Tk()
+# domtree = xml.dom.minidom.parse('people.xml')
 
+# group = domtree.documentElement
 
-# Part
-part_text = tk.StringVar()
-part_label = tk.Label(app, text='Part Name', font=('bold', 14), pady=20)
-part_label.grid(row=0, column=0, sticky='W')
-part_entry = tk.Entry(app, textvariable=part_text)
-part_entry.grid(row=0, column=1)
+# people = group.getElementsByTagName("person")
 
-# Customer
-customer_text = tk.StringVar()
-customer_label = tk.Label(app, text='Customer', font=('bold', 14))
-customer_label.grid(row=0, column=2, sticky='W')
-customer_entry = tk.Entry(app, textvariable=customer_text)
-customer_entry.grid(row=0, column=3)
+# for person in people:
+#     print(f"-- Person {person.getAttribute('id')} --")
 
-# Retailer
-retailer_text = tk.StringVar()
-retailer_label = tk.Label(app, text='Retailer Name', font=('bold', 14))
-retailer_label.grid(row=1, column=0, sticky='W')
-retailer_entry = tk.Entry(app, textvariable=retailer_text)
-retailer_entry.grid(row=1, column=1)
+#     name = person.getElementsByTagName('name')[0].childNodes[0].nodeValue
+#     age = person.getElementsByTagName('age')[0].childNodes[0].nodeValue
+#     weight = person.getElementsByTagName('weight')[0].childNodes[0].nodeValue
+#     height = person.getElementsByTagName('height')[0].childNodes[0].nodeValue
 
-# Price
-price_text = tk.StringVar()
-price_label = tk.Label(app, text='Price', font=('bold', 14))
-price_label.grid(row=1, column=2, sticky='W')
-price_entry = tk.Entry(app, textvariable=price_text)
-price_entry.grid(row=1, column=3)
+#     print(f"Name: {name}")
+#     print(f"Age: {age}")
+#     print(f"Weight: {weight}")
+#     print(f"Height: {height}")
 
-# Parts List (ListBox)
-parts_list = tk.Listbox(app, height=8, width=50, border=0)
-parts_list.grid(row=3, column=0, columnspan=3, rowspan=6, pady=20, padx=20)
+#     people[0].getElementsByTagName('name')[0].childNodes[0].nodeValue
+#     people.setAttribute("id", "200")
+#     people.setAttribute("newAttr", "Hello")
 
-# Create scrollbar
-scrollbar = tk.Scrollbar(app)
-scrollbar.grid(row=3, column=3)
-# Set scrollbar to listbox
-parts_list.configure(yscrollcommand=scrollbar.set)
-scrollbar.configure(command=parts_list.yview)
+#     domtree.writexml(open('people.xml', 'w'))
 
 
-app. geometry('700x350')
-app.title("Simple App")
+import xml.sax
 
-# Start Program
-app.mainloop()
 
+class PeopleHandler(xml.sax.ContentHandler):
+
+    def startElement(self, name, attrs):
+        self.current = name
+        if name == "person":
+            print(f"-- Person {attrs['id']} --")
+
+    def characters(self, content):
+        if self.current == "name":
+            self.name = content
+        elif self.current == "age":
+            self.age = content
+        elif self.current == "weight":
+            self.weight = content
+        elif self.current == "height":
+            self.height = content
+
+    def endElement(self, name):
+        if self.current == "name":
+            print(f"Name: {self.name}")
+        elif self.current == "age":
+            print(f"Age: {self.age}")
+        elif self.current == "weight":
+            print(f"Weight: {self.weight}")
+        elif self.current == "height":
+            print(f"Height: {self.height}")
+        self.current = ""
+
+
+handler = PeopleHandler()
+parser = xml.sax.make_parser()
+parser.setContentHandler(handler)
+parser.parse('people.xml')
 
 # import zipfile
 # import csv
