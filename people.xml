@@ -1,4 +1,4 @@
-<people>
+<group>
   <person id="1">
     <name>John Doe</name>
     <age>30</age>
@@ -17,4 +17,4 @@
     <weight>85</weight>
     <height>175</height>
   </person>
-</people>
+</group>

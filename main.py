@@ -19,12 +19,12 @@ for person in people:
     print(f"Weight: {weight}")
     print(f"Height: {height}")
 
-    people[0].getElementsByTagName('name')[0].childNodes[0].nodeValue
-    people.setAttribute("id", "200")
-    people.setAttribute("newAttr", "Hello")
+    people[0].getElementsByTagName(
+        'name')[0].childNodes[0].nodeValue = "Ali Darvishi"
+    people[0].setAttribute("id", "200")
+    people[0].setAttribute("newAttr", "Hello")
 
     domtree.writexml(open('people.xml', 'w'))
-
 
 
 # import xml.sax
@@ -63,12 +63,6 @@ for person in people:
 # parser = xml.sax.make_parser()
 # parser.setContentHandler(handler)
 # parser.parse('people.xml')
-
-
-
-
-
-
 
 
 # import zipfile
